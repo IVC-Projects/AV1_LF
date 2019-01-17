@@ -1,0 +1,165 @@
+Codec: AOMedia Project AV1 Encoder 1.0.0-131-g6b312ac
+Source file: ../test_sequence/BasketballDrill_832x480_50.yuv File Type: RAW Format: I420
+Destination file: ../webm/qp52/BasketballDrill_832x480_I.webm
+Coding path: HBD
+Encoder parameters:
+    g_usage                      = 0
+    g_threads                    = 0
+    g_profile                    = 0
+    g_w                          = 832
+    g_h                          = 480
+    g_bit_depth                  = 8
+    g_input_bit_depth            = 8
+    g_timebase.num               = 1
+    g_timebase.den               = 50
+    g_error_resilient            = 0
+    g_pass                       = 0
+    g_lag_in_frames              = 19
+    large_scale_tile             = 0
+    rc_dropframe_thresh          = 0
+    rc_resize_mode               = 0
+    rc_resize_denominator        = 8
+    rc_resize_kf_denominator     = 8
+    rc_superres_mode             = 0
+    rc_superres_denominator      = 8
+    rc_superres_kf_denominator   = 8
+    rc_superres_qthresh          = 63
+    rc_superres_kf_qthresh       = 63
+    rc_end_usage                 = 3
+    rc_target_bitrate            = 256
+    rc_min_quantizer             = 0
+    rc_max_quantizer             = 63
+    rc_undershoot_pct            = 25
+    rc_overshoot_pct             = 25
+    rc_buf_sz                    = 6000
+    rc_buf_initial_sz            = 4000
+    rc_buf_optimal_sz            = 5000
+    rc_2pass_vbr_bias_pct        = 50
+    rc_2pass_vbr_minsection_pct  = 0
+    rc_2pass_vbr_maxsection_pct  = 2000
+    fwd_kf_enabled               = 0
+    kf_mode                      = 1
+    kf_min_dist                  = 1
+    kf_max_dist                  = 1
+Pass 1/2 frame    1/0          0B       0 us 0.00 fpm [ETA  unknown] [KPass 1/2 frame    2/1        192B   21256 us 94.09 fps [ETA  0:00:00] [KPass 1/2 frame    3/2        384B   31923 us 93.98 fps [ETA  0:00:00] [KPass 1/2 frame    4/3        576B   41865 us 95.55 fps [ETA  0:00:00] [KPass 1/2 frame    5/4        768B   52089 us 95.99 fps [ETA  0:00:00] [KPass 1/2 frame    6/5        960B   61104 us 98.19 fps [ETA  0:00:00] [KPass 1/2 frame    7/6       1152B   69612 us 100.56 fps [ETA  0:00:00] [KPass 1/2 frame    8/7       1344B   79262 us 100.93 fps [ETA  0:00:00] [KPass 1/2 frame    9/8       1536B   88203 us 102.04 fps [ETA  0:00:00] [KPass 1/2 frame   10/9       1728B   98040 us 102.00 fps [ETA  0:00:00] [KPass 1/2 frame   11/10      1920B  107343 us 102.48 fps [ETA  0:00:00] [KPass 1/2 frame   12/11      2112B  116371 us 103.12 fps [ETA  0:00:00] [KPass 1/2 frame   13/12      2304B  126732 us 102.58 fps [ETA  0:00:00] [KPass 1/2 frame   14/13      2496B  135846 us 103.06 fps [ETA  0:00:00] [KPass 1/2 frame   15/14      2688B  144863 us 103.55 fps [ETA  0:00:00] [KPass 1/2 frame   16/15      2880B  154319 us 103.68 fps [ETA  0:00:00] [KPass 1/2 frame   17/16      3072B  163423 us 104.02 fps [ETA  0:00:00] [KPass 1/2 frame   18/17      3264B  172838 us 104.14 fps [ETA  0:00:00] [KPass 1/2 frame   19/18      3456B  182592 us 104.06 fps [ETA  0:00:00] [KPass 1/2 frame   20/19      3648B  192549 us 103.87 fps [ETA  0:00:00] [K[KPass 1/2 frame   20/21      4032B    1612b/f   80600b/s  202401 us (98.81 fps)[K
+Pass 2/2 frame    1/0          0B  202415 us 4.94 fps [ETA  unknown] [KPass 2/2 frame    2/0          0B  236646 us 8.45 fps [ETA  unknown] [KPass 2/2 frame    3/0          0B  236944 us 12.66 fps [ETA  unknown] [KPass 2/2 frame    4/0          0B  237251 us 16.86 fps [ETA  unknown] [KPass 2/2 frame    5/0          0B  237499 us 21.05 fps [ETA  unknown] [KPass 2/2 frame    6/0          0B  237711 us 25.24 fps [ETA  unknown] [KPass 2/2 frame    7/0          0B  237874 us 29.43 fps [ETA  unknown] [KPass 2/2 frame    8/0          0B  238186 us 33.59 fps [ETA  unknown] [KPass 2/2 frame    9/0          0B  238387 us 37.75 fps [ETA  unknown] [KPass 2/2 frame   10/0          0B  238571 us 41.92 fps [ETA  unknown] [KPass 2/2 frame   11/0          0B  238707 us 46.08 fps [ETA  unknown] [KPass 2/2 frame   12/0          0B  238853 us 50.24 fps [ETA  unknown] [KPass 2/2 frame   13/0          0B  239004 us 54.39 fps [ETA  unknown] [KPass 2/2 frame   14/0          0B  239142 us 58.54 fps [ETA  unknown] [KPass 2/2 frame   15/0          0B  239277 us 62.69 fps [ETA  unknown] [KPass 2/2 frame   16/0          0B  239416 us 66.83 fps [ETA  unknown] [KPass 2/2 frame   17/0          0B  239554 us 70.97 fps [ETA  unknown] [KPass 2/2 frame   18/0          0B  239688 us 75.10 fps [ETA  unknown] [KPass 2/2 frame   19/0          0B  239824 us 79.22 fps [ETA  unknown] /home/chenjs/.conda/envs/tf2/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+  return f(*args, **kwds)
+WARNING:tensorflow:python, in I
+WARNING:tensorflow:/home/chenjs/a5/aom_cnn_7/MODELS/qp52/VDSR25_qp52_I_set2K+2299_true
+2019-01-17 15:33:40.032568: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2019-01-17 15:33:40.193112: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-01-17 15:33:40.193456: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.721
+pciBusID: 0000:01:00.0
+totalMemory: 10.92GiB freeMemory: 10.14GiB
+2019-01-17 15:33:40.270539: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-01-17 15:33:40.270924: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 1 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.721
+pciBusID: 0000:02:00.0
+totalMemory: 10.92GiB freeMemory: 7.48GiB
+2019-01-17 15:33:40.271972: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Device peer to peer matrix
+2019-01-17 15:33:40.272005: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1051] DMA: 0 1 
+2019-01-17 15:33:40.272013: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1061] 0:   Y Y 
+2019-01-17 15:33:40.272018: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1061] 1:   Y Y 
+2019-01-17 15:33:40.272030: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-01-17 15:33:40.272037: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+WARNING:tensorflow:epoch:364	
+36.472 35.597 38.860 39.228   11686FFailed to decode frame 2 in stream 0: Corrupt frame detected
+    Failed to decode tile data
+[KPass 2/2 frame   20/1      11686B   14164 ms 1.41 fps [ETA  0:04:31] WARNING:tensorflow:python, in I
+WARNING:tensorflow:/home/chenjs/a5/aom_cnn_7/MODELS/qp52/VDSR25_qp52_I_set2K+2299_true
+2019-01-17 15:33:53.506964: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-01-17 15:33:53.506998: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+WARNING:tensorflow:epoch:364	
+36.472 35.597 38.860 39.228   11686F[KWARNING:tensorflow:python, in I
+WARNING:tensorflow:/home/chenjs/a5/aom_cnn_7/MODELS/qp52/VDSR25_qp52_I_set2K+2299_true
+2019-01-17 15:34:05.645898: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-01-17 15:34:05.645919: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+WARNING:tensorflow:epoch:364	
+36.468 35.576 38.910 39.317   11563F[KWARNING:tensorflow:python, in I
+WARNING:tensorflow:/home/chenjs/a5/aom_cnn_7/MODELS/qp52/VDSR25_qp52_I_set2K+2299_true
+2019-01-17 15:34:17.673926: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-01-17 15:34:17.673946: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+WARNING:tensorflow:epoch:364	
+36.464 35.575 38.945 39.244   11441F[KWARNING:tensorflow:python, in I
+WARNING:tensorflow:/home/chenjs/a5/aom_cnn_7/MODELS/qp52/VDSR25_qp52_I_set2K+2299_true
+2019-01-17 15:34:30.122047: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-01-17 15:34:30.122068: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+WARNING:tensorflow:epoch:364	
+36.483 35.593 38.936 39.310   11531F[KWARNING:tensorflow:python, in I
+WARNING:tensorflow:/home/chenjs/a5/aom_cnn_7/MODELS/qp52/VDSR25_qp52_I_set2K+2299_true
+2019-01-17 15:34:42.324817: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-01-17 15:34:42.324839: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+WARNING:tensorflow:epoch:364	
+36.500 35.621 38.863 39.321   11377F[KWARNING:tensorflow:python, in I
+WARNING:tensorflow:/home/chenjs/a5/aom_cnn_7/MODELS/qp52/VDSR25_qp52_I_set2K+2299_true
+2019-01-17 15:34:54.279522: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-01-17 15:34:54.279543: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+WARNING:tensorflow:epoch:364	
+36.514 35.613 39.044 39.359   11455F[KWARNING:tensorflow:python, in I
+WARNING:tensorflow:/home/chenjs/a5/aom_cnn_7/MODELS/qp52/VDSR25_qp52_I_set2K+2299_true
+2019-01-17 15:35:06.409716: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-01-17 15:35:06.409743: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+WARNING:tensorflow:epoch:364	
+36.495 35.583 39.041 39.430   11385F[KWARNING:tensorflow:python, in I
+WARNING:tensorflow:/home/chenjs/a5/aom_cnn_7/MODELS/qp52/VDSR25_qp52_I_set2K+2299_true
+2019-01-17 15:35:18.687594: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-01-17 15:35:18.687613: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+WARNING:tensorflow:epoch:364	
+36.479 35.574 38.953 39.425   11432F[KWARNING:tensorflow:python, in I
+WARNING:tensorflow:/home/chenjs/a5/aom_cnn_7/MODELS/qp52/VDSR25_qp52_I_set2K+2299_true
+2019-01-17 15:35:30.572199: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-01-17 15:35:30.572219: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+WARNING:tensorflow:epoch:364	
+36.590 35.711 38.939 39.416   11425F[KWARNING:tensorflow:python, in I
+WARNING:tensorflow:/home/chenjs/a5/aom_cnn_7/MODELS/qp52/VDSR25_qp52_I_set2K+2299_true
+2019-01-17 15:35:42.890269: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-01-17 15:35:42.890288: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+WARNING:tensorflow:epoch:364	
+36.393 35.491 38.872 39.311   11552F[KWARNING:tensorflow:python, in I
+WARNING:tensorflow:/home/chenjs/a5/aom_cnn_7/MODELS/qp52/VDSR25_qp52_I_set2K+2299_true
+2019-01-17 15:35:55.405656: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-01-17 15:35:55.405678: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+WARNING:tensorflow:epoch:364	
+36.473 35.611 38.821 39.147   11561F[KWARNING:tensorflow:python, in I
+WARNING:tensorflow:/home/chenjs/a5/aom_cnn_7/MODELS/qp52/VDSR25_qp52_I_set2K+2299_true
+2019-01-17 15:36:07.939843: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-01-17 15:36:07.939882: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+WARNING:tensorflow:epoch:364	
+36.392 35.499 38.898 39.190   11785F[KWARNING:tensorflow:python, in I
+WARNING:tensorflow:/home/chenjs/a5/aom_cnn_7/MODELS/qp52/VDSR25_qp52_I_set2K+2299_true
+2019-01-17 15:36:20.555387: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-01-17 15:36:20.555410: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+WARNING:tensorflow:epoch:364	
+36.422 35.554 38.819 39.110   11941F[KWARNING:tensorflow:python, in I
+WARNING:tensorflow:/home/chenjs/a5/aom_cnn_7/MODELS/qp52/VDSR25_qp52_I_set2K+2299_true
+2019-01-17 15:36:33.550699: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-01-17 15:36:33.550719: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+WARNING:tensorflow:epoch:364	
+36.376 35.492 38.897 39.073   12045F[KWARNING:tensorflow:python, in I
+WARNING:tensorflow:/home/chenjs/a5/aom_cnn_7/MODELS/qp52/VDSR25_qp52_I_set2K+2299_true
+2019-01-17 15:36:46.287123: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-01-17 15:36:46.287144: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+WARNING:tensorflow:epoch:364	
+36.357 35.492 38.845 38.915   12133F[KWARNING:tensorflow:python, in I
+WARNING:tensorflow:/home/chenjs/a5/aom_cnn_7/MODELS/qp52/VDSR25_qp52_I_set2K+2299_true
+2019-01-17 15:36:58.967502: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-01-17 15:36:58.967521: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+WARNING:tensorflow:epoch:364	
+36.368 35.495 38.873 38.979   12183F[KWARNING:tensorflow:python, in I
+WARNING:tensorflow:/home/chenjs/a5/aom_cnn_7/MODELS/qp52/VDSR25_qp52_I_set2K+2299_true
+2019-01-17 15:37:11.721094: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-01-17 15:37:11.721114: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+WARNING:tensorflow:epoch:364	
+36.362 35.515 38.822 38.796   12604F[KWARNING:tensorflow:python, in I
+WARNING:tensorflow:/home/chenjs/a5/aom_cnn_7/MODELS/qp52/VDSR25_qp52_I_set2K+2299_true
+2019-01-17 15:37:24.587488: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-01-17 15:37:24.587512: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+WARNING:tensorflow:epoch:364	
+36.378 35.537 38.852 38.740   12432F[KWARNING:tensorflow:python, in I
+WARNING:tensorflow:/home/chenjs/a5/aom_cnn_7/MODELS/qp52/VDSR25_qp52_I_set2K+2299_true
+2019-01-17 15:37:37.348585: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-01-17 15:37:37.348605: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+WARNING:tensorflow:epoch:364	
+36.379 35.547 38.871 38.652   12456F[K[KPass 2/2 frame   20/20    235673B   94269b/f 4713450b/s  250198 ms (0.08 fps)[K
+Stream 0 PSNR (Overall/Avg/Y/U/V) 36.441 36.442 35.564 38.896 39.159 4713460 bps  250198 ms

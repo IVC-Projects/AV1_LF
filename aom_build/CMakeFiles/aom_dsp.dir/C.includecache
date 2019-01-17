@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chenjs/a5/aom_cnn_7/aom_build/aom_av1_dummy.c
+
+/home/chenjs/a5/aom_cnn_7/aom_build/aom_dsp_dummy.c
+
