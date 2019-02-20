@@ -27,6 +27,7 @@
 #include "av1/common/resize.h"
 #include "av1/common/tile_common.h"
 
+#include "av1/encoder/addition_handle_frame.h"
 #include "av1/encoder/aq_complexity.h"
 #include "av1/encoder/aq_cyclicrefresh.h"
 #include "av1/encoder/aq_variance.h"
@@ -95,11 +96,6 @@ FILE *yuv_skinmap_file = NULL;
 FILE *yuv_rec_file;
 #define FILE_NAME_LEN 100
 #endif
-
-
-extern void additionHandle_frame(AV1_COMP *cpi, AV1_COMMON *cm, FRAME_TYPE frame_type);  
-extern void additionHandle_blocks(AV1_COMP *cpi, AV1_COMMON *cm, FRAME_TYPE frame_type);  
-extern uint8_t **blocks_to_cnn_secondly(uint8_t *pBuffer_y, int height, int width, int stride, FRAME_TYPE frame_type);
 
 static INLINE void Scale2Ratio(AOM_SCALING mode, int *hr, int *hs) {
   switch (mode) {
@@ -4095,9 +4091,7 @@ static void superres_post_encode(AV1_COMP *cpi) {
 }
 
 static void loopfilter_frame(AV1_COMP *cpi, AV1_COMMON *cm) {
-//�ж��ǲ��ǵ�ɫͨ��������ǣ���ôֻ��yͨ����������yuv����ͨ��
   const int num_planes = av1_num_planes(cm);
-  //������
   MACROBLOCKD *xd = &cpi->td.mb.e_mbd;
 
   assert(IMPLIES(is_lossless_requested(&cpi->oxcf),
@@ -5049,9 +5043,13 @@ static int encode_frame_to_data_rate(AV1_COMP *cpi, size_t *size, uint8_t *dest,
   // Pick the loop filter level for the frame.
   if (!cm->allow_intrabc) {
 	  //loopfilter_frame(cpi, cm);
-    //additionHandle_frame(cpi, cm, cm->frame_type);
-    additionHandle_blocks(cpi, cm, cm->frame_type);
-
+    //addition_handle_frame(cm, cm->frame_type);
+    //addition_handle_blocks(cm, cm->frame_type);
+#if CONFIG_CNN_RESTORATION == 1
+    addition_handle_blocks(cm, cm->cur_frame->frame_type);
+#else
+    loopfilter_frame(cpi, cm);
+#endif
   } else {
 
     cm->lf.filter_level[0] = 0;

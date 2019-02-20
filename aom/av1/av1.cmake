@@ -105,6 +105,8 @@ list(APPEND AOM_AV1_DECODER_SOURCES
             "${AOM_ROOT}/av1/decoder/obu.c")
 
 list(APPEND AOM_AV1_ENCODER_SOURCES
+            "${AOM_ROOT}/av1/encoder/addition_handle_frame.cpp"
+            "${AOM_ROOT}/av1/encoder/addition_handle_frame.h"
             "${AOM_ROOT}/av1/av1_cx_iface.c"
             "${AOM_ROOT}/av1/encoder/aq_complexity.c"
             "${AOM_ROOT}/av1/encoder/aq_complexity.h"
@@ -121,6 +123,7 @@ list(APPEND AOM_AV1_ENCODER_SOURCES
             "${AOM_ROOT}/av1/encoder/bitstream.c"
             "${AOM_ROOT}/av1/encoder/bitstream.h"
             "${AOM_ROOT}/av1/encoder/block.h"
+            "${AOM_ROOT}/av1/encoder/call_tensorflow.cpp"
             "${AOM_ROOT}/av1/encoder/context_tree.c"
             "${AOM_ROOT}/av1/encoder/context_tree.h"
             "${AOM_ROOT}/av1/encoder/corner_detect.c"
@@ -137,9 +140,6 @@ list(APPEND AOM_AV1_ENCODER_SOURCES
             "${AOM_ROOT}/av1/encoder/encodemv.h"
             "${AOM_ROOT}/av1/encoder/encoder.c"
             "${AOM_ROOT}/av1/encoder/encoder.h"
-            "${AOM_ROOT}/av1/encoder/additionHandle_Frame.cpp"
-            "${AOM_ROOT}/av1/encoder/additionHandle_Frame.h"
-            "${AOM_ROOT}/av1/encoder/callTensorflow.cpp"
             "${AOM_ROOT}/av1/encoder/encodetxb.c"
             "${AOM_ROOT}/av1/encoder/encodetxb.h"
             "${AOM_ROOT}/av1/encoder/ethread.c"

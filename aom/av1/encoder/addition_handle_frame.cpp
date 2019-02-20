@@ -1,15 +1,29 @@
+/*
+ * Copyright (c) 2019, Alliance for Open Media. All rights reserved
+ *
+ * This source code is subject to the terms of the BSD 2 Clause License and
+ * the Alliance for Open Media Patent License 1.0. If the BSD 2 Clause License
+ * was not distributed with this source code in the LICENSE file, you can
+ * obtain it at www.aomedia.org/license/software. If the Alliance for Open
+ * Media Patent License 1.0 was not distributed with this source code in the
+ * PATENTS file, you can obtain it at www.aomedia.org/license/patent.
+ */
+
 #include "additionHandle_Frame.h"
-#include <iostream>
 
-using namespace std;
+extern uint8_t **call_tensorflow(uint8_t *ppp, int height, int width,
+                                 int stride, FRAME_TYPE frame_type);
+extern uint8_t **block_call_tensorflow(uint8_t *ppp, int cur_buf_height,
+                                       int cur_buf_width, int stride,
+                                       FRAME_TYPE frame_type);
+extern uint16_t **call_tensorflow_hbd(uint16_t *ppp, int height, int width,
+                                      int stride, FRAME_TYPE frame_type);
+extern uint16_t **block_call_tensorflow_hbd(uint16_t *ppp, int cur_buf_height,
+                                            int cur_buf_width, int stride,
+                                            FRAME_TYPE frame_type);
 
-extern uint8_t**  callTensorflow(uint8_t* ppp, int height, int width, int stride, FRAME_TYPE frame_type);
-extern uint8_t**  blockCallTensorflow(uint8_t* ppp, int cur_buf_height, int cur_buf_width, int stride, FRAME_TYPE frame_type);
-extern uint16_t** callTensorflow_hbd(uint16_t* ppp, int height, int width, int stride, FRAME_TYPE frame_type);
-extern uint16_t** blockCallTensorflow_hbd(uint16_t* ppp, int cur_buf_height, int cur_buf_width, int stride, FRAME_TYPE frame_type);
-
-/*Feed full frame image into the network*/
-void additionHandle_frame(AV1_COMP *cpi, AV1_COMMON *cm, FRAME_TYPE frame_type) {
+/*Feed the whole frame image into the neural network.*/
+void addition_handle_frame(AV1_COMMON *cm, FRAME_TYPE frame_type) {
 	YV12_BUFFER_CONFIG* pcPicYuvRec = cm->frame_to_show;
 
 	if(!cm->use_highbitdepth) {
@@ -65,8 +79,8 @@ void additionHandle_frame(AV1_COMP *cpi, AV1_COMMON *cm, FRAME_TYPE frame_type) 
 
 }
 
-/*Split into 1000x1000 blocks into the network*/
-void additionHandle_blocks(AV1_COMP *cpi, AV1_COMMON *cm, FRAME_TYPE frame_type) {
+/*Split into 1000x1000 blocks and feed them into the neural network separately*/
+void addition_handle_blocks(AV1_COMP *cpi, AV1_COMMON *cm, FRAME_TYPE frame_type) {
 	YV12_BUFFER_CONFIG* pcPicYuvRec = cm->frame_to_show;
 	
 	int height = pcPicYuvRec->y_height;
@@ -108,15 +122,12 @@ void additionHandle_blocks(AV1_COMP *cpi, AV1_COMMON *cm, FRAME_TYPE frame_type)
 					buf = blockCallTensorflow(py + x*buf_width + stride*buf_height*y, cur_buf_height, cur_buf_width, stride, frame_type);
 
 					bkuPy = bkuPyTemp;
-					//FILE *ff = fopen("end.yuv", "wb");
 					for (int i = 0; i < cur_buf_height; i++) {
 						for (int j = 0; j < cur_buf_width; j++) {
-							*(bkuPy + j + x * buf_width + y * buf_height * stride) = buf[i][j]; //Fill in the luma buffer again
-							//fwrite(bkuPy + j, 1, 1, ff);
+							*(bkuPy + j + x * buf_width + y * buf_height * stride) = buf[i][j]; //Fill in the luma buffer
 						}
 						bkuPy += stride;
 					}
-					//fclose(ff);
 				}
 			}
 		}
@@ -165,7 +176,10 @@ void additionHandle_blocks(AV1_COMP *cpi, AV1_COMMON *cm, FRAME_TYPE frame_type)
 }
 
 
-/*frame_type determines what kind of network blocks need to be fed into, not exactly equivalent to what frame the current frame is.*/
+/*
+ *frame_type determines what kind of network blocks need to be fed into,
+ *not exactly equivalent to what frame the current frame is.
+ */
 /*Low bitdepth*/
 uint8_t **blocks_to_cnn_secondly(uint8_t *pBuffer_y, int height, int width, int stride, FRAME_TYPE frame_type) {
 

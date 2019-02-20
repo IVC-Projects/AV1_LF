@@ -1,3 +1,14 @@
+/*
+ * Copyright (c) 2019, Alliance for Open Media. All rights reserved
+ *
+ * This source code is subject to the terms of the BSD 2 Clause License and
+ * the Alliance for Open Media Patent License 1.0. If the BSD 2 Clause License
+ * was not distributed with this source code in the LICENSE file, you can
+ * obtain it at www.aomedia.org/license/software. If the Alliance for Open
+ * Media Patent License 1.0 was not distributed with this source code in the
+ * PATENTS file, you can obtain it at www.aomedia.org/license/patent.
+ */
+
 #pragma once
 #include <limits.h>
 #include <math.h>
@@ -60,18 +71,26 @@
 #include "av1/encoder/speed_features.h"
 #include "av1/encoder/temporal_filter.h"
 
-
 #ifndef ADDITIONHANDLE_FRAME
 #define ADDITIONHANDLE_FRAME
 
-extern "C" void additionHandle_frame(AV1_COMP *cpi, AV1_COMMON *cm, FRAME_TYPE frame_type); /*����ͼƬ�������磬��ֱ�ӽ��������ڴ�ŵ��ؽ�ͼ��yֵ�滻��*/
-extern "C" void additionHandle_blocks(AV1_COMP *cpi, AV1_COMMON *cm, FRAME_TYPE frame_type); /*�ֿ��������磬��ֱ�ӽ��������ڴ�ŵ��ؽ�ͼ��yֵ�滻��*/
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-/*�ú�������֡ͼ��ָ���ӿ飬Ȼ����tensorflow����󽫷���ֵƴ��ԭͼ��С,û���õ�CvMat�Ĳ���*/
-extern "C" uint8_t **blocks_to_cnn_secondly(uint8_t *pBuffer_y, int height, int width, int stride, FRAME_TYPE frame_type);
+//Feed the whole frame image into the neural network.
+void addition_handle_frame(AV1_COMMON *cm, FRAME_TYPE frame_type); 
+//The encoding image is divided into small blocks and fed into the neural network separately.
+void addition_handle_blocks(AV1_COMMON *cm, FRAME_TYPE frame_type); 
 
+uint8_t **blocks_to_cnn_secondly(uint8_t *pBuffer_y, int height, int width,
+                                 int stride, FRAME_TYPE frame_type);
 
-#endif ADDITIONHANDLE_FRAME
+#ifdef __cplusplus
+}  // extern "C"
+#endif
+
+#endif //ADDITIONHANDLE_FRAME
 
 #pragma once
 
