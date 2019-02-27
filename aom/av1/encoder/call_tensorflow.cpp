@@ -333,7 +333,7 @@ uint8_t **block_call_tensorflow(uint8_t *ppp, int cur_buf_height,
 		{
 			/*PyList_GetItem(PyList_GetItem(presult, i), j) get the object
 			  at position (i,j) in the tuple pointed to by presult*/
-			PyArg_Parse(PyList_GetItem(PyList_GetItem(presult, i), j), "i", &s);
+			PyArg_Parse(PyList_GetItem(PyList_GetItem(presult, i), j), "B", &s);
 			rePic[i][j] = s;
 		}
 	}
