@@ -69,6 +69,10 @@
 #include "aom_util/debug_util.h"
 #endif  // CONFIG_BITSTREAM_DEBUG || CONFIG_MISMATCH_DEBUG
 
+#if CONFIG_CNN_RESTORATION
+#include "av1/encoder/addition_handle_frame.h"
+#endif  // CONFIG_CNN_RESTORATION
+
 #define DEFAULT_EXPLICIT_ORDER_HINT_BITS 7
 
 // av1 uses 10,000,000 ticks/second as time stamp
